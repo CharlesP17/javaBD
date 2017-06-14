@@ -1,0 +1,4 @@
+model\dao\ExampleDAO.class
+model\dao\BoulderDashBDDConnector.class
+model\dao\AbstractDAO.class
+model\ModelFacade.class
