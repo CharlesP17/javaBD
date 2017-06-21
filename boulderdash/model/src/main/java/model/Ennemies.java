@@ -1,6 +1,6 @@
 package model;
 
-public class Ennemies {
+public class Ennemies extends Elements{
 	public Ennemies(){
 		
 	}

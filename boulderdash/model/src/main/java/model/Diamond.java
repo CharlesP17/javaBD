@@ -1,6 +1,6 @@
 package model;
 
-public class Diamond {
+public class Diamond extends Elements{
 	public Diamond()
 	{
 		

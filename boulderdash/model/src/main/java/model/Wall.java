@@ -1,6 +1,6 @@
 package model;
 
-public class Wall {
+public class Wall extends Elements{
 	public Wall()
 	{
 		

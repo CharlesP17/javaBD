@@ -1,6 +1,6 @@
 package model;
 
-public class Dirt {
+public class Dirt extends Elements{
 	public Dirt()
 	{
 		
