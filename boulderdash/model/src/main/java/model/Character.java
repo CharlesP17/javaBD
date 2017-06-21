@@ -1,6 +1,6 @@
 package model;
 
-public class Character {
+public class Character extends Elements{
 	public Character(){
 		
 	}
