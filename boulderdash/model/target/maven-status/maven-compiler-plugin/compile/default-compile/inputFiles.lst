@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 C:\Users\chera\git\javaBD\boulderdash\model\src\main\java\model\dao\AbstractDAO.java
 C:\Users\chera\git\javaBD\boulderdash\model\src\main\java\model\package-info.java
 C:\Users\chera\git\javaBD\boulderdash\model\src\main\java\model\dao\BoulderDashBDDConnector.java
 C:\Users\chera\git\javaBD\boulderdash\model\src\main\java\model\ModelFacade.java
 C:\Users\chera\git\javaBD\boulderdash\model\src\main\java\model\dao\package-info.java
 C:\Users\chera\git\javaBD\boulderdash\model\src\main\java\model\dao\ExampleDAO.java
+=======
+C:\Users\Clement\git\javaBD\boulderdash\model\src\main\java\model\dao\package-info.java
+C:\Users\Clement\git\javaBD\boulderdash\model\src\main\java\model\dao\AbstractDAO.java
+C:\Users\Clement\git\javaBD\boulderdash\model\src\main\java\model\dao\BoulderDashBDDConnector.java
+C:\Users\Clement\git\javaBD\boulderdash\model\src\main\java\model\package-info.java
+C:\Users\Clement\git\javaBD\boulderdash\model\src\main\java\model\dao\ExampleDAO.java
+C:\Users\Clement\git\javaBD\boulderdash\model\src\main\java\model\ModelFacade.java
+>>>>>>> branch 'master' of https://github.com/CharlesP17/javaBD

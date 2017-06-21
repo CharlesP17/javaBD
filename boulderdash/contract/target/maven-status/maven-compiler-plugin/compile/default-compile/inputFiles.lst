@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\chera\git\javaBD\boulderdash\contract\src\main\java\model\package-info.java
 C:\Users\chera\git\javaBD\boulderdash\contract\src\main\java\model\IModel.java
 C:\Users\chera\git\javaBD\boulderdash\contract\src\main\java\controller\IController.java
@@ -5,3 +6,12 @@ C:\Users\chera\git\javaBD\boulderdash\contract\src\main\java\view\package-info.j
 C:\Users\chera\git\javaBD\boulderdash\contract\src\main\java\controller\package-info.java
 C:\Users\chera\git\javaBD\boulderdash\contract\src\main\java\model\Example.java
 C:\Users\chera\git\javaBD\boulderdash\contract\src\main\java\view\IView.java
+=======
+C:\Users\Clement\git\javaBD\boulderdash\contract\src\main\java\controller\IController.java
+C:\Users\Clement\git\javaBD\boulderdash\contract\src\main\java\controller\package-info.java
+C:\Users\Clement\git\javaBD\boulderdash\contract\src\main\java\model\Example.java
+C:\Users\Clement\git\javaBD\boulderdash\contract\src\main\java\model\IModel.java
+C:\Users\Clement\git\javaBD\boulderdash\contract\src\main\java\model\package-info.java
+C:\Users\Clement\git\javaBD\boulderdash\contract\src\main\java\view\IView.java
+C:\Users\Clement\git\javaBD\boulderdash\contract\src\main\java\view\package-info.java
+>>>>>>> branch 'master' of https://github.com/CharlesP17/javaBD
