@@ -16,7 +16,7 @@ import javax.swing.JPanel;
 public class DisplayElements extends JPanel{
 
 
-      
+      //ok
 public void paintComponent(Graphics g){
         try {
           Image wall = ImageIO.read(new File("bloc 1.JPG"));
@@ -31,7 +31,7 @@ public void paintComponent(Graphics g){
         for(int i =0; i < tab.length; i++)
         {
         			{
-        				
+        			//	
         			}
         
         }
