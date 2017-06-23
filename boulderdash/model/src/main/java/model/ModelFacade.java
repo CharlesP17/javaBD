@@ -2,9 +2,7 @@ package model;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.List;
-
-import model.dao.ExampleDAO;
+import model.dao.MapFromDB;
 
 /**
  * <h1>The Class ModelFacade provides a facade of the Model component.</h1>
@@ -12,7 +10,7 @@ import model.dao.ExampleDAO;
  * @author Jean-Aymeric DIET jadiet@cesi.fr
  * @version 1.0
  */
-public class ModelFacade implements IModel {
+public abstract class ModelFacade implements IModel {
 
     /**
      * Instantiates a new model facade.
@@ -21,11 +19,45 @@ public class ModelFacade implements IModel {
         super();
     }
 
+	@Override
+	public void UpdatePositionX() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void UpdatePostitionY() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void GetPositionX() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void GetPositionY() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public ArrayList<Elements> GetIDElements() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String readMapFromDB(final int idlevel) throws SQLException {
+        return MapFromDB.readMapFromDB(idlevel);
+    }
+	
     /*
      * (non-Javadoc)
      * @see model.IModel#getExampleById(int)
      */
-    @Override
+  /*  @Override
     public Example getExampleById(final int id) throws SQLException {
         return ExampleDAO.getExampleById(id);
     }
@@ -34,7 +66,7 @@ public class ModelFacade implements IModel {
      * (non-Javadoc)
      * @see model.IModel#getExampleByName(java.lang.String)
      */
-    @Override
+/*    @Override
     public Example getExampleByName(final String name) throws SQLException {
         return ExampleDAO.getExampleByName(name);
     }
@@ -43,11 +75,12 @@ public class ModelFacade implements IModel {
      * (non-Javadoc)
      * @see model.IModel#getAllExamples()
      */
-    @Override
+  /*  @Override
     public List<Example> getAllExamples() throws SQLException {
         return ExampleDAO.getAllExamples();
     }
-    public ArrayList<Elements> IDElements;
+    public ArrayList<Elements> IDElements;*/
+
 	@Override
 	public void UpdatePositionX() {
 		// TODO Auto-generated method stub

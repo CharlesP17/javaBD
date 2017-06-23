@@ -2,26 +2,56 @@ package model;
 
 import java.util.ArrayList;
 
+
 public class Elements {
+
 	public ArrayList<Elements> IDElements;
 
+
+	/**
+	 * add attributs to set the position X, Y and give an ID for all TypeElements (rocks/dirt/diamond...)
+	 * 
+	 * 
+	 */
+	public int positionX;
+	public int positionY;
+	public TypElements idElements;
+
 	
-	
-	public void UpdatePositionX() 
+	/**
+	 * UpdatePositionX
+	 * @param postionx
+	 * 					int
+	 */
+	public void UpdatePositionX(int positionX) 
 	{
 		
 	}
-	public void UpdatePositionY()
+	
+	/**
+	 * UpdatePositionY
+	 * @param position
+	 * 					int
+	 */
+	public void UpdatePositionY(int positionY)
 	{
 		
 	}
+	
+	/**
+	 * getPositionX
+	 */
 	public void GetPositionX()
 	{
 		
 	}
+	
+	/**
+	 * getPositionY
+	 */
 	public void GetPositionY()
 	{
 		
 	}
-	// retest
+
 }

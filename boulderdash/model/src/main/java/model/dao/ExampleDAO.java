@@ -16,6 +16,9 @@ import model.Example;
  */
 public abstract class ExampleDAO extends AbstractDAO {
 
+	 /** The sql all the level by id. */
+    private static String sqlGetMap   = "{call GetMap(?)}";
+    
     /** The sql example by id. */
     private static String sqlExampleById   = "{call findExampleById(?)}";
 
@@ -31,6 +34,33 @@ public abstract class ExampleDAO extends AbstractDAO {
     /** The name column index. */
     private static int    nameColumnIndex  = 2;
 
+    public String cell;
+    
+    private static int MapColumnIndex = 2;
+    
+    /**
+     * Gets the level by id.
+     *
+     * @return the all cells
+     * @throws SQLException
+     *             the SQL exception
+     */
+    public static String getMap(final int id) throws SQLException {
+        final CallableStatement callStatement = prepareCall(sqlGetMap);
+        String example = null;
+        callStatement.setInt(1, id);
+        if (callStatement.execute()) {
+            final ResultSet result = callStatement.getResultSet();
+            if (result.first()) {
+                example = new String(result.getString(MapColumnIndex));
+            }
+            result.close();
+        }
+        return example;
+        
+    }
+    
+    
     /**
      * Gets the example by id.
      *

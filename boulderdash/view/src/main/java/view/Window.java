@@ -1,5 +1,6 @@
 package view;
 
+import java.awt.Container;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
@@ -21,6 +22,7 @@ public boolean up,down,right,left;
 		
 		windo.setVisible(true);
 		}
+
 
 		@Override
 		public void keyPressed(KeyEvent e) 
