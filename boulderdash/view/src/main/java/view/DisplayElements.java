@@ -9,21 +9,29 @@ import java.io.IOException;
 import javax.swing.JPanel;
 import javax.imageio.ImageIO;
 import javax.swing.JOptionPane;
+<<<<<<< HEAD
 /**
  * <h1>The Class Window.</h1>
  *
  * @author Charles
  * @version 1.0
  */
+=======
+
+import model.dao.MapFromDB;
+
+
 
 public class DisplayElements extends JPanel {
 	
-	public DisplayElements(){}
-	/** allow the picture to display on the panel*/
+	
+/** allow the picture to display on the panel*/
 public void paintComponent(Graphics g)
 {	
-	/** get the map*/
+
+/** get the map*/
 String test = "33333333333333333333;34522222225222222223;32221222222522222523;32222222222222522423;35222222422222522223;35222222255222222223;32225522222222252223;33333333333332222223;32222222222222222223;32522122222122222223;32212222222522222223;32225225522522252523;32225222222242222243;32222223333333333333;32122222422222222243;32542222552252222263;32222222222252215213;32222522225222225223;34222222222222224253;33333333333333333333;";
+
 char[][] tab= new char[20][20];
 String str = test;
 /** split the map in differents part and pull it the board*/

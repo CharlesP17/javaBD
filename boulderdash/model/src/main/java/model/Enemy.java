@@ -1,7 +1,7 @@
 package model;
 
-public class Ennemies extends Elements{
-	public Ennemies(){
+public class Enemy extends Elements{
+	public Enemy(){
 		
 	}
 	public void GetElements()
