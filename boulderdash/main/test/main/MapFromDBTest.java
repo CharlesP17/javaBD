@@ -10,6 +10,13 @@ import org.junit.Test;
 
 import model.dao.MapFromDB;
 
+/**
+ * JUnit tests for the class MapFromDB.
+ *
+ * @author Florentin
+ * @version 1.0
+ */
+
 public class MapFromDBTest {
 
 	@BeforeClass
@@ -29,6 +36,12 @@ public class MapFromDBTest {
 	}
 
 	@Test
+	
+	/**
+	 * Tests if the level we want to display is available.
+	 * 
+	 */
+	
 	public void testMapFromDB() {
 		final int min = 1;
 		final int max = 5;
