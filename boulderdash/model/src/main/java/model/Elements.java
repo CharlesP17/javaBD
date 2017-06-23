@@ -2,12 +2,12 @@ package model;
 
 import java.util.ArrayList;
 
-/**
- * 
- * @author victor
- *@version 1.0
- */
+
 public class Elements {
+
+	public ArrayList<Elements> IDElements;
+
+
 	/**
 	 * add attributs to set the position X, Y and give an ID for all TypeElements (rocks/dirt/diamond...)
 	 * 
@@ -15,7 +15,8 @@ public class Elements {
 	 */
 	public int positionX;
 	public int positionY;
-	int idElements;
+	public TypElements idElements;
+
 	
 	/**
 	 * UpdatePositionX
