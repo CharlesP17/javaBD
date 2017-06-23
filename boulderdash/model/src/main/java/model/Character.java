@@ -8,8 +8,4 @@ public class Character extends Elements{
 		
 	}
 
-	public void GetElements()
-	{
-		
-	}
 }

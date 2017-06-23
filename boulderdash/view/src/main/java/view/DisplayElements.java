@@ -17,7 +17,11 @@ public class DisplayElements extends JPanel {
 
 public void paintComponent(Graphics g)
 {	
-	
+
+/*
+ * 
+ * 
+ * */
 String test = "33333333333333333333;34522222225222222223;32221222222522222523;32222222222222522423;35222222422222522223;35222222255222222223;32225522222222252223;33333333333332222223;32222222222222222223;32522122222122222223;32212222222522222223;32225225522522252523;32225222222242222243;32222223333333333333;32122222422222222243;32542222552252222263;32222222222252215213;32222522225222225223;34222222222222224253;33333333333333333333;";
 char[][] tab= new char[20][20];
 String str = test;
@@ -55,7 +59,7 @@ Image img5 = ImageIO.read(new File("5.jpg"));
 g.drawImage(img5, i*16, j*16, null);
 break;
 case '6':
-Image img6 = ImageIO.read(new File("6.jpg"));
+Image img6 = ImageIO.read(new File("8.jpg"));
 g.drawImage(img6, i*16, j*16, null);
 break;
 case '7':
@@ -68,6 +72,7 @@ break;
 }
 }
 }
+
 catch(IOException e)
 {
 		e.printStackTrace();

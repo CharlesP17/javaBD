@@ -1,16 +1,10 @@
 package view;
 
-import java.awt.Container;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-
 import javax.swing.JFrame;
-import javax.swing.JPanel;
 
-public class Window implements KeyListener {
-	
-public boolean up,down,right,left;
 
+public class Window  {
+private static final long serialVersionIUD = 1L;
 		public Window()
 		{
 		JFrame windo = new JFrame();
@@ -24,31 +18,7 @@ public boolean up,down,right,left;
 		}
 
 
-		@Override
-		public void keyPressed(KeyEvent e) 
-		{
-			// TODO Auto-generated method stub
-			if(e.getKeyCode()== KeyEvent.VK_UP) up = true;
-			if(e.getKeyCode()== KeyEvent.VK_DOWN) down = true;
-			if(e.getKeyCode()== KeyEvent.VK_LEFT) left = true;
-			if(e.getKeyCode()== KeyEvent.VK_RIGHT) right = true;
-			
-		}
-
-		@Override
-		public void keyReleased(KeyEvent e) {
-			// TODO Auto-generated method stub
-			if(e.getKeyCode()== KeyEvent.VK_UP) up = false;
-			if(e.getKeyCode()== KeyEvent.VK_DOWN) down = false;
-			if(e.getKeyCode()== KeyEvent.VK_LEFT) left = false;
-			if(e.getKeyCode()== KeyEvent.VK_RIGHT) right = false;
-		}
-
-		@Override
-		public void keyTyped(KeyEvent arg0) {
-			// TODO Auto-generated method stub
-			
-		}
+	
 			
 		}
 
