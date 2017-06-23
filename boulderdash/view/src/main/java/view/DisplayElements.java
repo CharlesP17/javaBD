@@ -1,5 +1,7 @@
 package view;
 
+import java.awt.Graphics;
+
 import javax.swing.JOptionPane;
 
 /**
@@ -21,9 +23,20 @@ public class DisplayElements implements IView {
      * (non-Javadoc)
      * @see view.IView#displayMessage(java.lang.String)
      */
-    @Override
     public final void displayMessage(final String message) {
         JOptionPane.showMessageDialog(null, message);
     }
+
+	@Override
+	public void UpdateDrawElements(Graphics graphics) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void DrawElements(Graphics graphics) {
+		// TODO Auto-generated method stub
+		
+	}
 
 }

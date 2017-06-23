@@ -15,24 +15,26 @@ import java.sql.Statement;
 
 public class Jdbc {
 
+	//private static final int idlevel = 1;
 	private static String map = null;
 
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		
-		readMapFromDB(); 
+		readMapFromDB(idlevel); 
 		System.out.print(map);
 		
-	}
+	}*/
 	
 	/**
      * Extract the map from the data
+	 * @param id 
      *
      * @return the map on a string
      * @throws SQLException
      *             the SQL exception
      */
 	
-	public static String readMapFromDB () {
+	public static String readMapFromDB (int idlevel) {
 
 			
 	    
@@ -58,7 +60,7 @@ public class Jdbc {
 		    	Class.forName("com.mysql.jdbc.Driver");
 		    	cn = DriverManager.getConnection(url, user, password);
 		    	st = cn.createStatement();
-		    	String sql = "call GetMap(1)";
+		    	String sql = "call GetMap(idlevel)";
 		    	rs = st.executeQuery(sql);
 		    	while (rs.next())	{
 		    		//System.out.print(rs.getString("Map"));
