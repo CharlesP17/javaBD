@@ -29,6 +29,7 @@ public class MapFromDBTest {
 
 	@Before
 	public void setUp() throws Exception {
+		
 	}
 
 	@After
@@ -45,10 +46,10 @@ public class MapFromDBTest {
 	public void testMapFromDB() {
 		final int min = 1;
 		final int max = 5;
-		final MapFromDB map = new MapFromDB();
+		final MapFromDB map = new MapFromDB(1);
 		assertTrue(map.getIdlevel() >= min); 
 		assertTrue(map.getIdlevel() <= max);
-		//(expected, map.getIdlevel());
+		
 	}
 
 }
