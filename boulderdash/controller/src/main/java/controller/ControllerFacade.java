@@ -1,5 +1,6 @@
 package controller;
 
+import java.awt.Graphics;
 import java.sql.SQLException;
 import model.IModel;
 import view.IView;
@@ -7,7 +8,7 @@ import view.IView;
 /**
  * <h1>The Class ControllerFacade provides a facade of the Controller component.</h1>
  *
- * @author Jean-Aymeric DIET jadiet@cesi.fr
+ * @author GourbiliereVictor
  * @version 1.0
  */
 public class ControllerFacade implements IController {
@@ -19,7 +20,7 @@ public class ControllerFacade implements IController {
     private final IModel model;
 
     /**
-     * Instantiates a new controller facade.
+     * Instantiates a new controller facade with the parameters IView content in the package view and IModel content in the package Model.
      *
      * @param view
      *            the view
@@ -33,7 +34,7 @@ public class ControllerFacade implements IController {
     }
 
     /**
-     * Start.
+     * Do the connection between the controller and the class levelDAO.
      *
      * @throws SQLException
      *             the SQL exception
@@ -72,4 +73,5 @@ public class ControllerFacade implements IController {
     public IModel getModel() {
         return this.model;
     }
+
 }

@@ -10,7 +10,7 @@ import model.dao.Jdbc;
  * @author Jean-Aymeric DIET jadiet@cesi.fr
  * @version 1.0
  */
-public class ModelFacade implements IModel {
+public abstract class ModelFacade implements IModel {
 
     /**
      * Instantiates a new model facade.
@@ -79,6 +79,12 @@ public class ModelFacade implements IModel {
     public List<Example> getAllExamples() throws SQLException {
         return ExampleDAO.getAllExamples();
     }
-    public ArrayList<Elements> IDElements;
-*/
+    public ArrayList<Elements> IDElements;*/
+
+	@Override
+	public void UpdatePositionX() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

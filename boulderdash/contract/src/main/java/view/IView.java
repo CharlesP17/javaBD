@@ -1,18 +1,18 @@
 package view;
 
+import java.awt.Graphics;
+
 /**
  * <h1>The Interface IView.</h1>
  *
- * @author Jean-Aymeric DIET jadiet@cesi.fr
+ * @author GourbiliereVictor
  * @version 1.0
  */
 public interface IView {
 
-    /**
-     * Display message.
-     *
-     * @param message
-     *            the message
-     */
-    void displayMessage(String message);
+	/** 
+	 * Allow to call the operation paintComponent(Graphics graphics) and update this one to refresh the map.
+	 * @param graphics
+	 */
+	void UpdatepaintComponent(Graphics graphics);
 }

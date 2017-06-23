@@ -3,31 +3,29 @@ package main;
 import java.sql.SQLException;
 
 import controller.ControllerFacade;
-import model.ModelFacade;
-import view.DisplayElements;
 
 /**
  * <h1>The Class Main.</h1>
  *
- * @author Jean-Aymeric DIET jadiet@cesi.fr
+ * @author GourbiliereVictor
  * @version 1.0
  */
-public abstract class Main {
+public class Main {
 
     /**
-     * The main method.
+     * The main method.Allow to instantiate a new ControllerFacade and begin operations.
      *
      * @param args
      *            the arguments
      */
-    public static void main(final String[] args) {
-        final ControllerFacade controller = new ControllerFacade(new DisplayElements(), new ModelFacade());
-
+    public static void main(final String[] args) 
+    {
+    	 ControllerFacade controller = new ControllerFacade(null, null);
         try {
             controller.start();
         } catch (final SQLException exception) {
             exception.printStackTrace();
         }
     }
-
 }
+

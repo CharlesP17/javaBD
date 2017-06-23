@@ -19,14 +19,40 @@ public class DisplayElements implements IView {
         super();
     }
 
-    /*
-     * (non-Javadoc)
-     * @see view.IView#displayMessage(java.lang.String)
-     */
-    public final void displayMessage(final String message) {
-        JOptionPane.showMessageDialog(null, message);
-    }
 
+      //ok
+public void paintComponent(Graphics g){
+        try {
+          Image wall = ImageIO.read(new File("bloc 1.JPG"));
+          
+          g.drawImage(wall, 0, 0, null);
+          //Pour une image de fond
+          //g.drawImage(img, 0, 0, this.getWidth(), this.getHeight(), this);
+        } catch (IOException e) {
+          e.printStackTrace();}
+        
+        int tab[][]={{0,0,0,0,0,0},{0,1,1,1,1,0},{0,1,1,1,1,0}};
+        for(int i =0; i < tab.length; i++)
+        {
+        			{
+        			//	
+        			}
+        
+        }
+        } 
+    
+    
+  
+  /* public void UpdateDrawElements(){}
+   public void UpdatePositionX(){}
+   public void UpdatePositionY(){}
+   public void GetPositionX(){}
+   public void GetPositionY(){}
+   public int GetIDElements()
+   {
+	return 0;
+	}
+*/
 	@Override
 	public void UpdateDrawElements(Graphics graphics) {
 		// TODO Auto-generated method stub
