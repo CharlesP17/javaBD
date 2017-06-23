@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="boulderdash/contract/src/main/java"/>
+	<classpathentry kind="src" path="boulderdash/contract/src/test/java"/>
+	<classpathentry kind="src" path="boulderdash/controller/src/main/java"/>
+	<classpathentry kind="src" path="boulderdash/main/src/main/java"/>
+	<classpathentry kind="src" path="boulderdash/model/src/main/java"/>
+	<classpathentry kind="src" path="boulderdash/view/src/main/java"/>
+	<classpathentry kind="lib" path="boulderdash/contract/target/contract-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="boulderdash/controller/target/controller-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="boulderdash/main/target/main-0.0.1-SNAPSHOT-shaded.jar"/>
+	<classpathentry kind="lib" path="boulderdash/main/target/main-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="boulderdash/main/target/original-main-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="boulderdash/model/target/model-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="boulderdash/view/target/view-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="boulderdash/contract/target/classes"/>
+</classpath>
