@@ -13,14 +13,14 @@ import java.sql.Statement;
  * @version 1.0
  */
 
-public class Jdbc {
+public class MapFromDB {
 
-	//private static final int idlevel = 1;
+	private static final int idlevel = 5;
 	private static String map = null;
 
 	/*public static void main(String[] args) {
 		
-		readMapFromDB(idlevel); 
+		MapFromDB(idlevel); 
 		System.out.print(map);
 		
 	}*/
@@ -34,7 +34,7 @@ public class Jdbc {
      *             the SQL exception
      */
 	
-	public static String readMapFromDB (int idlevel) {
+	public static String MapFromDB (int idlevel) {
 
 			
 	    
@@ -84,6 +84,10 @@ public class Jdbc {
 		    	}
 		    }
 			return map;
+	}
+
+	public int getIdlevel() {
+		return idlevel;
 	}
 	
 }

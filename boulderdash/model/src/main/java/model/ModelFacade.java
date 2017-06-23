@@ -2,7 +2,7 @@ package model;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
-import model.dao.Jdbc;
+import model.dao.MapFromDB;
 
 /**
  * <h1>The Class ModelFacade provides a facade of the Model component.</h1>
@@ -50,7 +50,7 @@ public abstract class ModelFacade implements IModel {
 	}
 
 	public String readMapFromDB(final int idlevel) throws SQLException {
-        return Jdbc.readMapFromDB(idlevel);
+        return MapFromDB.readMapFromDB(idlevel);
     }
 	
     /*

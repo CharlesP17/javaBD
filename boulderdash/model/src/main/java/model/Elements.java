@@ -2,8 +2,6 @@ package model;
 
 import java.util.ArrayList;
 
-import TypeElements;
-
 /**
  * 
  * @author victor
@@ -17,7 +15,7 @@ public class Elements {
 	 */
 	public int positionX;
 	public int positionY;
-	TypeElements idElements;
+	int idElements;
 	
 	/**
 	 * UpdatePositionX
