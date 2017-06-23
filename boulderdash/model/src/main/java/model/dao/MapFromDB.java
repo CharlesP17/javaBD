@@ -16,6 +16,7 @@ import java.sql.Statement;
 public class MapFromDB {
 
 	private static final int idlevel = 5;
+	private static final String map = null;
 	
 
 	/*public static void main(String[] args) {
@@ -34,7 +35,7 @@ public class MapFromDB {
      *             the SQL exception
      */
 	
-	public MapFromDB (int idlevel) {
+	public String Map (final int idlevel) {
 
 			
 	    
@@ -82,7 +83,7 @@ public class MapFromDB {
 		    		e.printStackTrace();
 		    	}
 		    }
-			return;
+			return map;
 	}
 
 	public int getIdlevel() {
