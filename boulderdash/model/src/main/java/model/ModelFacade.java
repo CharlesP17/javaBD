@@ -12,7 +12,7 @@ import model.dao.ExampleDAO;
  * @author Jean-Aymeric DIET jadiet@cesi.fr
  * @version 1.0
  */
-public class ModelFacade implements IModel {
+public abstract class ModelFacade implements IModel {
 
     /**
      * Instantiates a new model facade.
