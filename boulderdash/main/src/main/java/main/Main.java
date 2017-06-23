@@ -15,6 +15,7 @@ import view.Window;
  */
 public class Main {
 
+	
     /**
      * The main method.
      *
@@ -25,6 +26,7 @@ public class Main {
     {
     	
     	Window fen = new Window();
+    	
     }
         /*final ControllerFacade controller = new ControllerFacade(new DisplayElements(), new ModelFacade());
 
