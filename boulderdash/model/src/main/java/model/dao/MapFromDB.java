@@ -6,6 +6,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import model.IModel;
+
+
+
 /**
  * <h1>The Class Jdbc.</h1>
  *
@@ -16,26 +20,18 @@ import java.sql.Statement;
 public class MapFromDB {
 
 	private static final int idlevel = 5;
-	private static final String map = null;
+	public char[][] tab;
+	public String map = null;
 	
 
-	/*public static void main(String[] args) {
-		
-		MapFromDB(idlevel); 
-		System.out.print(map);
-		
-	}*/
+	public MapFromDB()
+	{
+		try{
+		this.BDD();} 
+		catch (SQLException e){e.printStackTrace();}
+	}
 	
-	/**
-     * Extract the map from the data
-	 * @param id 
-     *
-     * @return the map on a string
-     * @throws SQLException
-     *             the SQL exception
-     */
-	
-	public String Map (final int idlevel) {
+	public void BDD () throws SQLException {
 
 			
 	    
@@ -61,33 +57,53 @@ public class MapFromDB {
 		    	Class.forName("com.mysql.jdbc.Driver");
 		    	cn = DriverManager.getConnection(url, user, password);
 		    	st = cn.createStatement();
-		    	String sql = "call GetMap(idlevel)";
-		    	rs = st.executeQuery(sql);
-		    	while (rs.next())	{
-		    		rs.getString("Map");
+		    	/S*String sql = "SELECT * FROM	Map WHERE id=1";
+		    	*rs = st.executeQuery(sql);
+		    	*while (rs.next())	{
+		    		*this.map = rs.getString("Map");
 		    		
-		    	}
-		    }
-		    catch (SQLException e) {
-		    	e.printStackTrace();
+		    	}*/
+		    	System.out.println(map);
+		    	this.tabsplit();
 		    }
 		    catch (ClassNotFoundException e) {
 		    	e.printStackTrace();
 		    }
-		    finally {
-		    	try {
-		    		cn.close();
-		    		st.close();
-		    	}
-		    	catch (SQLException e) {
-		    		e.printStackTrace();
-		    	}
-		    }
-			return map;
-	}
+		
+		    	
+		    	
 
-	public int getIdlevel() {
-		return idlevel;
+		    
+			//return map;
 	}
+public void tabsplit()
+{
+	
+	tab= new char[20][20];
+	String str = this.map;
+	/** split the map in differents part and pull it the board*/
+	String[] splitArray = str.split(";");
+	for(int x = 0; x<20;x++){
+	for(int y = 0; y<20;y++){
+		/** Detect the position of each character in the board*/
+			tab[x][y]=splitArray[x].charAt(y);
+
+	for(int i = 0; i < tab.length; i++) {
+        for(int j =0; j < tab.length; j++) {
+            
+
+        }
+        
+    }
+	
+	System.out.println("BDD");
+	}
+	
+	}
+	
+}
+public IModel getBDD(){
+	return (IModel) new MapFromDB();
+}
 	
 }

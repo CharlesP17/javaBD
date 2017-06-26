@@ -10,10 +10,8 @@ import java.util.ArrayList;
 /** allow to update and get the position*/ 
 public interface IModel {
 
-	public void UpdatePositionX();
-	public void UpdatePostitionY();
-	public void GetPositionX();
-	public void GetPositionY();
+	public void MapFromDB();
+	
 	
 	
 }

@@ -9,6 +9,8 @@ import java.sql.SQLException;
  * @version 1.0
  */
 public interface IModel {
+	
+	public void BDD();
 
     /*
      * Gets the example by id.
@@ -53,5 +55,5 @@ public interface IModel {
 
 
 
-	Object readMapFromDB(int i);
+
 }
