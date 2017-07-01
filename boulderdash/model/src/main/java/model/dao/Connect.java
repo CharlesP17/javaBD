@@ -25,11 +25,12 @@ String passwd = "";
 Connection cn = null;
 Statement st =null;
 ResultSet rs = null;
+int idlevel = 1;
 
 try {
 	cn = DriverManager.getConnection(url, login, passwd);
 	st = (Statement) cn.createStatement();
-	String sql ="call GetMap(4)";
+	String sql ="call GetMap("+idlevel+")";
 	rs = st.executeQuery(sql);
 	while (rs.next())	{
 		map = rs.getString("Map");
