@@ -22,15 +22,9 @@ public class Main {
     public static void main(final String[] args) throws SQLException 
     {
 
-    	/** call the constructor of window*/
+    	/** instantiate the constructor of window*/
     	Window fen = new Window();
     	//Connect ok = new Connect();
-    	
-    	
-    
-    
-    
-    	
     	
     }}
  

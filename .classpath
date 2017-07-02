@@ -6,6 +6,7 @@
 	<classpathentry kind="src" path="boulderdash/main/src/main/java"/>
 	<classpathentry kind="src" path="boulderdash/model/src/main/java"/>
 	<classpathentry kind="src" path="boulderdash/view/src/main/java"/>
+	<classpathentry kind="src" path="JunitTests"/>
 	<classpathentry kind="lib" path="boulderdash/contract/target/contract-0.0.1-SNAPSHOT.jar"/>
 	<classpathentry kind="lib" path="boulderdash/controller/target/controller-0.0.1-SNAPSHOT.jar"/>
 	<classpathentry kind="lib" path="boulderdash/main/target/main-0.0.1-SNAPSHOT-shaded.jar"/>
@@ -14,5 +15,6 @@
 	<classpathentry kind="lib" path="boulderdash/model/target/model-0.0.1-SNAPSHOT.jar"/>
 	<classpathentry kind="lib" path="boulderdash/view/target/view-0.0.1-SNAPSHOT.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="boulderdash/contract/target/classes"/>
 </classpath>
