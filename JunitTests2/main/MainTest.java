@@ -1,4 +1,4 @@
-package model;
+package main;
 
 import static org.junit.Assert.*;
 
@@ -8,8 +8,12 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class WallTest {
+import controller.ControllerFacade;
 
+
+
+public class MainTest {
+	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 	}
@@ -20,7 +24,8 @@ public class WallTest {
 
 	@Before
 	public void setUp() throws Exception {
-		new Wall(0, 0, null);
+		
+		
 	}
 
 	@After
@@ -28,26 +33,8 @@ public class WallTest {
 	}
 
 	@Test
-	public void testWall() {
-		
-	}
-
-	@Test
-	public void testGetElements() {
-		
-	}
-
-	@Test
-	public void testGetPositionX() {
-		final int GetPosotionX = 0;
-		assertTrue(GetPosotionX <= 20);
-	}
-
-
-	@Test
-	public void testGetPositionY() {
-		final int GetPositionY = 0;
-		assertTrue(GetPositionY <= 20);
+	public void testMain() {
+	
 	}
 
 }
